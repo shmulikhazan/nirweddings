@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Build output (if added later)
+dist/
+build/

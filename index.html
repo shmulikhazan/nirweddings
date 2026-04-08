@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ניר – צלם חתונות</title>
+  <meta name="description" content="ניר – צלם חתונות מקצועי. מתמחה בצילום אינטימי ורגשי שמספר את הסיפור שלכם." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Heebo:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">ניר</a>
+      <button class="nav__burger" id="navBurger" aria-label="פתח תפריט">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#gallery">גלריה</a></li>
+        <li><a href="#services">שירותים</a></li>
+        <li><a href="#testimonials">המלצות</a></li>
+        <li><a href="#contact" class="nav__cta">צרו קשר</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <!-- Background image set via CSS / Cloudinary URL below -->
+      <img
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80"
+        alt="חתונה"
+        class="hero__img"
+        loading="eager"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">צילום חתונות</p>
+      <h1 class="hero__title">הרגעים שלכם,<br/>לנצח.</h1>
+      <p class="hero__sub">מספר סיפורי אהבה דרך עדשת המצלמה – בטבעיות, ברגש, באמת.</p>
+      <div class="hero__actions">
+        <a href="#gallery" class="btn btn--light">לגלריה</a>
+        <a href="#contact" class="btn btn--outline-light">לתיאום פגישה</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="גלול למטה">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=80"
+          alt="ניר צלם חתונות"
+          loading="lazy"
+        />
+        <div class="about__accent"></div>
+      </div>
+      <div class="about__text">
+        <span class="label">אודותי</span>
+        <h2>היי, אני ניר</h2>
+        <p>
+          כבר למעלה מ-10 שנים אני מלווה זוגות ביום המיוחד ביותר בחייהם.
+          אני מאמין בצילום אותנטי – לא מבויים, לא מלאכותי.
+          רק אתם, הרגע, והאהבה שביניכם.
+        </p>
+        <p>
+          מצלם חתונות ברחבי הארץ, מהצפון ועד הנגב, ומוכן לטוס לחתונות מחוץ לארץ.
+        </p>
+        <div class="about__stats">
+          <div class="stat">
+            <strong>350+</strong>
+            <span>חתונות</span>
+          </div>
+          <div class="stat">
+            <strong>10+</strong>
+            <span>שנות ניסיון</span>
+          </div>
+          <div class="stat">
+            <strong>98%</strong>
+            <span>זוגות מרוצים</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--dark">בואו נדבר</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery-section section" id="gallery">
+    <div class="container">
+      <span class="label label--center">עבודות נבחרות</span>
+      <h2 class="section-title text-center">גלריה</h2>
+      <p class="section-sub text-center">לחצו על תמונה לתצוגה מלאה</p>
+    </div>
+
+    <div class="gallery" id="galleryGrid">
+      <!-- תמונות נטענות כאן — ניתן להחליף ב-Cloudinary URLs -->
+      <div class="gallery__item" data-index="0">
+        <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800&q=75" alt="חתן וכלה" loading="lazy" />
+        <div class="gallery__hover"><span>צפה</span></div>
+      </div>
+      <div class="gallery__item gallery__item--tall" data-index="1">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=75" alt="טבעת נישואין" loading="lazy" />
+        <div class="gallery__hover"><span>צפה</span></div>
+      </div>
+      <div class="gallery__item" data-index="2">
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=75" alt="זוג מאורסים" loading="lazy" />
+        <div class="gallery__hover"><span>צפה</span></div>
+      </div>
+      <div class="gallery__item gallery__item--wide" data-index="3">
+        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1200&q=75" alt="חתונה בטבע" loading="lazy" />
+        <div class="gallery__hover"><span>צפה</span></div>
+      </div>
+      <div class="gallery__item" data-index="4">
+        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=75" alt="רגע מרגש" loading="lazy" />
+        <div class="gallery__hover"><span>צפה</span></div>
+      </div>
+      <div class="gallery__item" data-index="5">
+        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=75" alt="כלה" loading="lazy" />
+        <div class="gallery__hover"><span>צפה</span></div>
+      </div>
+      <div class="gallery__item gallery__item--tall" data-index="6">
+        <img src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=800&q=75" alt="זר פרחים" loading="lazy" />
+        <div class="gallery__hover"><span>צפה</span></div>
+      </div>
+      <div class="gallery__item" data-index="7">
+        <img src="https://images.unsplash.com/photo-1524863479829-916d8e77f114?w=800&q=75" alt="ריקוד" loading="lazy" />
+        <div class="gallery__hover"><span>צפה</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="תצוגת תמונה">
+    <button class="lightbox__close" id="lightboxClose" aria-label="סגור">✕</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="הקודם">&#8250;</button>
+    <button class="lightbox__next" id="lightboxNext" aria-label="הבא">&#8249;</button>
+    <div class="lightbox__img-wrap">
+      <img src="" alt="" id="lightboxImg" />
+    </div>
+  </div>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <span class="label label--center">מה אני מציע</span>
+      <h2 class="section-title text-center">חבילות</h2>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+          </div>
+          <h3>בסיס</h3>
+          <p class="service-card__desc">8 שעות צילום · 400 תמונות ערוכות · גלריה דיגיטלית</p>
+          <p class="service-card__price">החל מ-₪4,500</p>
+          <a href="#contact" class="btn btn--outline-dark">פרטים</a>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <span class="service-card__badge">הכי פופולרי</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3>פרמיום</h3>
+          <p class="service-card__desc">10 שעות · 600 תמונות ערוכות · וידאו 3 דקות · אלבום מודפס</p>
+          <p class="service-card__price">החל מ-₪7,500</p>
+          <a href="#contact" class="btn btn--light">פרטים</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3>צילומי אירוסין</h3>
+          <p class="service-card__desc">2 שעות לוקיישן · 150 תמונות ערוכות · גלריה דיגיטלית</p>
+          <p class="service-card__price">החל מ-₪1,800</p>
+          <a href="#contact" class="btn btn--outline-dark">פרטים</a>
+        </div>
+
+      </div>
+      <p class="services__note">כל החבילות מותאמות אישית – צרו קשר לפרטים נוספים ולתיאום פגישת היכרות</p>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <span class="label label--center">מה אומרים הזוגות</span>
+      <h2 class="section-title text-center">המלצות</h2>
+      <div class="testimonials__track" id="testimonialsTrack">
+
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <blockquote>
+            "ניר היה מדהים. בלתי נראה במהלך האירוע אבל תפס כל רגע קסום. התמונות גרמו לנו לבכות מרוב אושר."
+          </blockquote>
+          <cite>— מיכל ויואב, חיפה</cite>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <blockquote>
+            "המקצועיות, הסבלנות, והחיוך שלו לאורך כל הערב – קיבלנו הרבה יותר ממה שציפינו. ממליצים בחום!"
+          </blockquote>
+          <cite>— שירה ואלון, תל אביב</cite>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <blockquote>
+            "ניר הצליח להנציח כל רגע אינטימי של היום שלנו. האלבום שקיבלנו הוא אוצר לכל החיים."
+          </blockquote>
+          <cite>— רוני ודן, ירושלים</cite>
+        </article>
+
+      </div>
+      <div class="testimonials__dots" id="testimonialsDots"></div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <span class="label">צרו קשר</span>
+        <h2>בואו נדבר</h2>
+        <p>מוזמנים לשלוח הודעה לתיאום פגישת היכרות חינמית,<br/>לשאלות, או לבדיקת זמינות לתאריך שלכם.</p>
+        <ul class="contact__details">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            <a href="tel:+972501234567">050-123-4567</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:nir@nirweddings.co.il">nir@nirweddings.co.il</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a href="https://instagram.com/nirweddings" target="_blank" rel="noopener">@nirweddings</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">שם מלא *</label>
+            <input type="text" id="name" name="name" required placeholder="ישראל ישראלי" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">אימייל *</label>
+            <input type="email" id="email" name="email" required placeholder="email@example.com" />
+            <span class="form-error" id="emailError"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">טלפון</label>
+            <input type="tel" id="phone" name="phone" placeholder="050-000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="date">תאריך החתונה</label>
+            <input type="date" id="date" name="date" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">הודעה *</label>
+          <textarea id="message" name="message" rows="4" required placeholder="ספרו לי קצת על האירוע שלכם..."></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn--dark btn--full" id="submitBtn">
+          <span id="submitText">שלחו הודעה</span>
+          <span id="submitLoader" hidden>שולח...</span>
+        </button>
+        <p class="form-success" id="formSuccess" hidden>תודה! קיבלתי את ההודעה ואחזור אליכם בהקדם 🤍</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo">ניר – צלם חתונות</p>
+      <p class="footer__copy">© <span id="footerYear"></span> ניר. כל הזכויות שמורות.</p>
+      <div class="footer__social">
+        <a href="https://instagram.com/nirweddings" target="_blank" rel="noopener" aria-label="אינסטגרם">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/972501234567" target="_blank" rel="noopener" aria-label="וואטסאפ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
